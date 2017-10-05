@@ -1,0 +1,26 @@
+---
+title: "Porto Seguro’s Safe Driver Prediction"
+output: html_notebook
+---
+
+```{r}
+train.df <- data.table::fread("~/Desktop/train.csv", stringsAsFactors = FALSE, sep = ",", data.table = FALSE , encoding = "UTF-8")
+```
+
+
+```{r}
+head(train.df)
+```
+
+```{r}
+dim(train.df)
+```
+
+```{r}
+table(train.df$target)
+```
+
+```{r}
+str(train.df)
+```
+
